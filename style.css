@@ -9,13 +9,15 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-color: rgb(72, 121, 255);
+    background-color: #047cfc;
     color: rgb(255, 255, 255); 
 }
 
 /* CABEÇA DO SITE */
 
 .header {
+    background-color: #838383;
+    height: 80px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -33,6 +35,8 @@ body {
 }
 
 .principal {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     
@@ -49,7 +53,21 @@ body {
     display: flex;
 }
 
-section {
+section.filmes {
+
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+section.series {
+
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-flow: row wrap;
 
@@ -59,6 +77,14 @@ section {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.box-series {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: rgb(0, 0, 0);
 }
 
 /* MENU */
@@ -81,30 +107,34 @@ section {
 
 .menu ul li a {
     text-decoration: none;
-    color: rgb(72, 121, 255);
+    color: #047cfc;
     padding: 10px;
     display: block;
 }
 
 .menu ul li a:hover {
-    background-color: rgb(72, 121, 255);
+    background-color: #5e5e5e;
     color: white;
     transition: 0.5s;
 }
 
 
-
-
 /* IMAGENS */
 
+
 img.logo {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+}
+
+img.rodape {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+    width: 100px;
 }
 
 img.banner {
+    display: flex;
     width: 100%;
-    height: 100%;
+    height: 450px;
 }
 
 img.rede {
@@ -117,3 +147,20 @@ img.capa {
     width: 90%;
     height: 90%;
 }
+
+/* RODAPÉ DO SITE */
+
+footer {
+    
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    
+ }

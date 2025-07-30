@@ -16,7 +16,7 @@ body {
 /* CABEÇA DO SITE */
 
 .header {
-    background-color: #838383;
+    background-color: #ffffff;
     height: 80px;
     display: flex;
     flex-flow: row wrap;
@@ -42,6 +42,22 @@ body {
     
 }
 
+.secundario {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.terciario {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .texto {
     display: flex;
     flex-flow: column wrap;
@@ -63,6 +79,14 @@ section.filmes {
 
 }
 
+div.filmes1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
 section.series {
 
     width: 100%;
@@ -73,14 +97,28 @@ section.series {
 
 }
 
-.box-filmes {
+div.series1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+                          /* texto PRINCIPAL */
+
+
+
+.texto1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     color: rgb(255, 255, 255);
 }
 
-.box-series {
+.texto2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -92,8 +130,8 @@ section.series {
 .menu {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.247);
-    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.281);
+    background-color: #047cfc;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -107,14 +145,14 @@ section.series {
 
 .menu ul li a {
     text-decoration: none;
-    color: #047cfc;
+    color: #ffffff;
     padding: 10px;
     display: block;
 }
 
 .menu ul li a:hover {
-    background-color: #5e5e5e;
-    color: white;
+    background-color: #ffffff;
+    color: #047cfc;
     transition: 0.5s;
 }
 
@@ -126,15 +164,13 @@ img.logo {
     width: 150px;
 }
 
-img.rodape {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+    img.rodape {
     width: 100px;
 }
 
 img.banner {
-    display: flex;
-    width: 100%;
-    height: 450px;
+    width: 300px;
+    
 }
 
 img.rede {
@@ -150,8 +186,10 @@ img.capa {
 
 /* RODAPÉ DO SITE */
 
+
+
 footer {
-    
+    height: 250px;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -163,4 +201,16 @@ footer {
     font-size: 1em;
     font-weight: bolder;
     
+ }
+
+ footer > p > a {
+    text-decoration: none;
+    color: #04ebfc;
+ }
+
+ div.rede-social {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
  }
